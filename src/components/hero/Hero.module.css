@@ -1,0 +1,52 @@
+.heroContainer {
+    background-color: #1abc9c;
+}
+
+.heroAvatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.heroTitle {
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.dividerContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider {
+    flex: 1;
+    height: 3px;
+    background-color: #ffffff;
+    width: 270px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 15px;
+    border-radius: 50px;
+}
+
+.star {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.star i {
+    color: #ffffff;;
+    transition: color 0.3s ease;
+}
+.heroSubtitle{
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    text-align: center;
+}
