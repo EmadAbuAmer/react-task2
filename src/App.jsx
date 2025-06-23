@@ -3,13 +3,14 @@ import Hero from "./components/hero/Hero"
 import Portfolio from "./components/Portfolio/Portfolio"
 import About from "./components/About/About"
 import ContactMe from "./components/contact/ContactMe"
-import { Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Footer from "./components/footer/Footer"
 
 function App() {
 
   return (
     <>
+    <BrowserRouter>
       <Navbar />
       <Hero />
       <Routes>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<ContactMe/>} />
       </Routes>
       <Footer />
+      </BrowserRouter>
     </>
   )
 }

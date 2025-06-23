@@ -1,8 +1,11 @@
-.bg{
-    background-color:#1abc9c;
+.bg {
+    background-color: #1abc9c;
     margin-top: 150px;
+    padding: 20px 0;
+    margin-bottom: 150px;
 }
-.title{
+
+.title {
     font-size: 5rem;
     color: #ffffff;
     text-align: center;
@@ -13,7 +16,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px auto; 
     width: 30%;
 }
 
@@ -37,21 +40,27 @@
     color: #ffffff;
     transition: color 0.3s ease;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-direction: row;
+    flex-wrap: wrap; 
 }
+
 .text {
     font-size: 1.5rem;
     color: #ffffff;
     margin-top: 20px;
     text-align: left;
-    width: 33%;
+    width: 33%; 
     line-height: 1.5;
+    padding: 0 15px; 
+    box-sizing: border-box; 
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #1abc9c;
@@ -61,4 +70,85 @@
     font-size: 1.2rem;
     transition: background-color 0.3s ease, color 0.3s ease;
     border: #ffffff 2px solid;
+}
+
+@media screen and (max-width: 376px) {
+    .bg {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 10px 0;
+    }
+    .title {
+        font-size: 2.5rem;
+        margin-top: 50px;
+    }
+    .dividerContainer {
+        width: 80%; 
+        margin: 10px auto;
+    }
+    .star {
+        font-size: 18px;
+    }
+    .text {
+        width: 90%; 
+        text-align: center; 
+        font-size: 1.2rem;
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+    .row {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bg {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding: 15px 0;
+    }
+    .title {
+        font-size: 3.5rem;
+        margin-top: 70px;
+    }
+    .dividerContainer {
+        width: 50%;
+    }
+    .text {
+        width: 80%; 
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: 4rem;
+    }
+    .dividerContainer {
+        width: 40%;
+    }
+    .text {
+        width: 45%; 
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .title {
+        font-size: 4.5rem;
+    }
+    .text {
+        width: 30%; 
+    }
 }

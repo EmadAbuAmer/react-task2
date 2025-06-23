@@ -1,12 +1,20 @@
+
 .heroContainer {
     background-color: #1abc9c;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 50px 20px; 
+    text-align: center; 
 }
 
 .heroAvatar {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: 50px;
+    margin-top: 50px; 
+    object-fit: cover; 
 }
 
 .heroTitle {
@@ -14,20 +22,23 @@
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
+    margin-top: 30px; 
+    line-height: 1.2; 
 }
 
 .dividerContainer {
     display: flex;
     align-items: center;
-    text-align: center;
-    margin: 20px 0;
+    text-align: center; 
+    margin: 20px auto; 
+    width: 50%; 
+    max-width: 500px;
 }
 
 .divider {
     flex: 1;
     height: 3px;
     background-color: #ffffff;
-    width: 270px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0 15px;
     border-radius: 50px;
@@ -36,17 +47,110 @@
 .star {
     margin: 0 15px;
     font-size: 24px;
-    color: #ffffff;
+    color: #ffffff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .star i {
-    color: #ffffff;;
+    color: #ffffff;
     transition: color 0.3s ease;
 }
-.heroSubtitle{
+
+.heroSubtitle {
     font-size: 1.5rem;
     color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
     text-align: center;
+    max-width: 800px; 
+    padding: 0 15px; 
+    margin-bottom: 50px; 
+}
+
+
+@media screen and (max-width: 376px) {
+    .heroAvatar {
+        width: 120px; 
+        height: 120px;
+        margin-top: 30px;
+    }
+
+    .heroTitle  {
+        font-size:50px; 
+        margin-top: 20px;
+    }
+
+    .dividerContainer {
+        width: 80%; 
+        margin: 15px auto; 
+    }
+
+    .divider {
+        margin: 0 8px; 
+    }
+
+    .star {
+        font-size: 20px; 
+        margin: 0 8px; 
+    }
+
+    .heroSubtitle {
+        font-size: 1.1rem; 
+        margin-top: 15px;
+        padding: 0 10px; 
+        margin-bottom: 30px;
+    }
+
+    .heroContainer {
+        padding: 30px 10px; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .heroAvatar {
+        width: 150px; 
+        height: 150px;
+        margin-top: 40px;
+    }
+
+
+    .dividerContainer {
+        width: 60%; 
+        margin: 18px auto;
+    }
+
+    .divider {
+        margin: 0 10px;
+    }
+
+    .star {
+        font-size: 22px;
+        margin: 0 10px;
+    }
+
+    .heroSubtitle {
+        font-size: 1.3rem; 
+        margin-top: 18px;
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    .heroContainer {
+        padding: 40px 15px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .dividerContainer {
+        width: 45%; 
+    }
+
+    .heroSubtitle {
+        font-size: 1.4rem;
+    }
 }
